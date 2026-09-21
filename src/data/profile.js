@@ -21,6 +21,7 @@ export const profile = {
   role: "Full Stack Developer",
   status: "Available for opportunities",
   email: "denethsaputhanthri@gmail.com",
+  profileImage: "/profile pic.jpeg", // Add your photo to public/profile.jpg
   github: "https://github.com/denethSaputhanthri",
   linkedin: "#", // Replace with actual LinkedIn URL
   social: {
