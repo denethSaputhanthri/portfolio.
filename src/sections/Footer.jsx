@@ -1,0 +1,63 @@
+import SocialLinks from "../components/SocialLinks";
+import { profile } from "../data/profile";
+
+export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="border-t border-border">
+      <div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-10 py-8 sm:py-10">
+        <div className="grid sm:grid-cols-3 gap-8 items-start">
+          {/* Brand */}
+          <div>
+            <a
+              href="#home"
+              className="text-text-primary font-bold text-lg tracking-tight hover:text-accent transition-colors duration-300"
+            >
+              <span className="text-accent font-mono">{"<"}</span>
+              {profile.firstName.toUpperCase()}
+              <span className="text-accent font-mono">{" />"}</span>
+            </a>
+            <p className="text-sm text-text-muted mt-2">{profile.role}</p>
+          </div>
+
+          {/* Quick links */}
+          <div className="flex flex-col gap-2">
+            <span className="text-xs text-text-muted uppercase tracking-wider font-medium mb-1">
+              Links
+            </span>
+            {["About", "Projects", "Contact"].map((link) => (
+              <a
+                key={link}
+                href={`#${link.toLowerCase()}`}
+                className="text-sm text-text-secondary hover:text-accent transition-colors duration-300"
+              >
+                {link}
+              </a>
+            ))}
+          </div>
+
+          {/* Social */}
+          <div className="sm:text-right">
+            <span className="text-xs text-text-muted uppercase tracking-wider font-medium block mb-3">
+              Social
+            </span>
+            <SocialLinks className="sm:justify-end" />
+          </div>
+        </div>
+
+        {/* Bottom bar */}
+        <div className="mt-10 pt-6 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4">
+          <p className="text-xs text-text-muted">
+            © {currentYear} {profile.name}. All rights reserved.
+          </p>
+          <p className="text-xs text-text-muted">
+            Built with{" "}
+            <span className="text-text-secondary">React</span> +{" "}
+            <span className="text-text-secondary">Tailwind CSS</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}
