@@ -22,10 +22,8 @@ export default function Footer() {
           </div>
 
           {/* Quick links */}
-          <div className="flex flex-col gap-2">
-            <span className="text-xs text-text-muted uppercase tracking-wider font-medium mb-1">
-              Links
-            </span>
+          
+          <div className="flex flex-row gap-3 justify-center">
             {["About", "Projects", "Contact"].map((link) => (
               <a
                 key={link}
@@ -43,19 +41,10 @@ export default function Footer() {
               Social
             </span>
             <SocialLinks className="sm:justify-end" />
-          </div>
-        </div>
-
-        {/* Bottom bar */}
-        <div className="mt-10 pt-6 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-text-muted">
+            <p className="text-xs text-text-muted mt-5">
             © {currentYear} {profile.name}. All rights reserved.
           </p>
-          <p className="text-xs text-text-muted">
-            Built with{" "}
-            <span className="text-text-secondary">React</span> +{" "}
-            <span className="text-text-secondary">Tailwind CSS</span>
-          </p>
+          </div>
         </div>
       </div>
     </footer>

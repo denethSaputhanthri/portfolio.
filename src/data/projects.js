@@ -8,7 +8,7 @@ export const projects = [
     demo: null,
     featured: true,
     category: ["Frontend"],
-    image: null,
+    image: "/novacart.png",
   },
   {
     title: "Running Tracker",
@@ -73,7 +73,7 @@ export const projects = [
     demo: null,
     featured: false,
     category: ["Java"],
-    image: "",
+    image: "/PInventory.png",
   },
   {
     title: "SecureLaw AI Data Filter",
@@ -91,7 +91,7 @@ export const projects = [
     demo: "https://securelaw.vercel.app/login",
     featured: true,
     category: ["AI", "Backend", "Java"],
-    image: "/securelaw.jpg",
+    image: "/secureLaw.png",
   },
 ];
 
