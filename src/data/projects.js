@@ -1,5 +1,24 @@
 export const projects = [
   {
+    title: "EstateFlow",
+    description:
+      "A full-stack real estate management platform designed to manage users, properties, inquiries, and related business workflows. Includes authentication, role-based access, and Docker deployment.",
+    technologies: [
+      "Next.Js",
+      "Spring Boot",
+      "PostgreSQL",
+      "Docker",
+      "Flyway",
+      "Spring Security",
+      "REST API",
+    ],
+    github: "https://github.com/denethSaputhanthri/estatehub-backend.git",
+    demo: null,
+    featured: true,
+    category: ["Full Stack", "Backend","Frontend"],
+    image: "/estate.png",
+  },
+  {
     title: "NovaCart",
     description:
       "Modern e-commerce frontend focused on product browsing, categories, wishlist, cart functionality, and responsive UI. Built with a component-driven approach for scalability.",
@@ -26,25 +45,6 @@ export const projects = [
     demo: null,
     featured: true,
     category: ["Full Stack", "Mobile"],
-    image: null,
-  },
-  {
-    title: "Real Estate Management",
-    description:
-      "A full-stack real estate management platform designed to manage users, properties, inquiries, and related business workflows. Includes authentication, role-based access, and Docker deployment.",
-    technologies: [
-      "React",
-      "Spring Boot",
-      "PostgreSQL",
-      "Docker",
-      "Flyway",
-      "Spring Security",
-      "REST API",
-    ],
-    github: null,
-    demo: null,
-    featured: true,
-    category: ["Full Stack", "Backend"],
     image: null,
   },
   {
